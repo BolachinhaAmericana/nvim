@@ -17,11 +17,18 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")            -- prev/next search term in the middle
 vim.keymap.set("n", "N", "Nzzzv")
 
-vim.keymap.set("x", "<leader>p", "\"_dP")    -- replace clipboard with highlighing without yanking the highlighting
-
 vim.keymap.set("v", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
 vim.keymap.set("n", "<leader>s", "")
+
 -- Undotree
 vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
 
+-- clipboard settings -- NOTICE C-v pass to C-q to enter visual mode -- 
+-- vim.keymap.set("x", "<leader>p", "\"_dP")    -- replace clipboard with highlighing without yanking the highlighting
+
+-- Set up copying from system clipboard into Neovim (system can copy to Neovim)
+vim.api.nvim_set_keymap("v", "<C-C>", '"+y', { noremap = true, silent = true })
+
+vim.api.nvim_set_keymap("n", "<C-V>", '"+p', { noremap = true, silent = true })
+vim.api.nvim_set_keymap("v", "<C-V>", '"+p', { noremap = true, silent = true })

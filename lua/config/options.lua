@@ -14,6 +14,7 @@ vim.opt.wrap = false
 vim.opt.swapfile = false
 vim.opt.backup = false
 
+-- undotree related settings
 vim.opt.undodir = vim.fn.expand("~") .. "/.vim/undodir"
 vim.opt.undofile = true
 
@@ -29,3 +30,6 @@ vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "80"
+
+-- make neovim clipboard be separated from systems
+vim.opt.clipboard = ""
