@@ -2,6 +2,8 @@
 
 Using VSCode Neovim extension, integrating the actual application and not just vim motions.
 
+Disable and Restart Neovim with Ctrl+w+w and Ctrl+e+e
+
 ## Neovim Plugins
 Currently no nvim plugins installed.
 
@@ -10,11 +12,11 @@ Currently no nvim plugins installed.
 ### Vim Configured
 1. <leader>p/y  ......  Yanking and Pasting on System Clipboard
 2. <leader>t    ......  Open Terminal
-3. <leader>pr   ......  Run Current File (python)
+3. <leader>rf   ......  Run Current File (python)
 
 ### VSCode Configured
 4. LeftAlt+z+z  ......  Toggle Zen Mode
-5. Ctrl+Alt+t   ......  Switch Cursor Attention betwheen files and terminal
+5. Ctrl+e+t     ......  Switch Cursor Attention betwheen files and terminal (ExitTerminal)
 ```
 
 ### Keymap Notes
