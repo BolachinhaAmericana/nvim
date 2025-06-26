@@ -34,7 +34,8 @@ vim.opt.relativenumber = true  -- Show relative line numbers
 
 -- Clipboard settings
 -- Empty value to separate Neovim clipboard from system clipboard
-vim.opt.clipboard = ""
+
+--vim.opt.clipboard = ""
 
 -- Conditional settings based on VSCode or regular Neovim
 if vim.g.vscode then
